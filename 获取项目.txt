@@ -1,0 +1,24 @@
+git clone -b mergenewcpu git@github.com:jiaoxiumomo/recore.git
+git clone git@github.com:jiaoxiumomo/eureka_and_provider.git
+
+
+//获取项目
+git init
+git pull
+git checkout -b slc
+git branch
+
+
+
+报错2059：包括登录和备份
+
+使用此命令查看验证方式为caching_sha2_password，客户端不支持，修改为caching_sha2_password
+
+use mysql;
+
+select user,plugin from user ;
+方法：未试
+
+alter user root@localhost identified by 'password' password expire never;
+alter user root@localhost identified with mysql_native_password by 'password';
+flush privileges;
